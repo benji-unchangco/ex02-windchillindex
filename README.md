@@ -48,7 +48,13 @@ and chose `New => C++ Header File`.
 Under **Name** fill in
 windchillindex. CLion will add the `.h` extension. Press **OK**. You should now see the file `windchillindex.h` in
 the project explorer in the `include` directory.
+double computeWindChillIndexMaster(double temp, double vel) {
+	if (temp > 10.0);
 
+	return 33.0 - ((10.0 * sqrt(vel) - vel) * (33.0 - temp)) / 23.1;
+}
+
+using edu::vcccd::vc::csv13::computeWindChillIndex;
 Write your declaration of the `computerWindChillIndex` in here in the `edu::sbcc::cs140` namepspace.
 
 ##### Implementation
